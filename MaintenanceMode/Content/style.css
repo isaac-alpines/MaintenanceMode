@@ -1,0 +1,151 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #1d2a3b;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+    .container.card {
+        margin-top: 5.5rem;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: -5px -4px 47px 3px rgba(198, 198, 198, 0.3);
+        text-align: center;
+        padding: 3.6rem;
+    }
+
+.title-main {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+}
+
+.main-image svg {
+    max-width: 61rem;
+    margin-bottom: 2rem;
+}
+
+.subheading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+}
+
+.card .text {
+    font-size: 13px;
+    letter-spacing: 0.26px;
+}
+
+footer {
+    color: #b1b1b1;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.7rem;
+}
+
+    footer .logo svg {
+        width: 145px;
+        padding-left: 11px;
+    }
+
+    footer .left-side {
+        display: flex;
+        align-items: center;
+    }
+
+.btn {
+    padding: 15px 20px;
+    margin: 0 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #6cdd6c;
+}
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+
+    .btn:active {
+        opacity: 1;
+        filter: contrast(1.2)
+    }
+
+.contact-btn {
+    background: #6cdd6c;
+    color: white;
+}
+
+.contact-more {
+    color: #106797;
+    border: 2px solid #106797;
+}
+
+.info-panel {
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 7px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+        .container.card {
+            margin-top: 6rem;
+        }
+
+    .card .text {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 5.7px;
+    }
+
+    .container {
+        max-width: 95%;
+    }
+
+    .title-main {
+        font-size: 6.6vw;
+    }
+
+    .subheading {
+        font-size: 13px;
+    }
+
+    .card .text {
+        font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
